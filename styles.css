@@ -32,16 +32,14 @@ body {
     color: white;
 }
 
-.navbar-top, .navbar-brand {
+.navbar-top {
     background: rgb(43, 43, 43);
     color: white;
 }
-.navbar-default .navbar-brand,  {
-    background: rgb(43, 43, 43);
+.navbar-default .navbar-brand {
     color: white;
 }
 .navbar-default .navbar-nav>li>a {
-    background: rgb(43, 43, 43);
     color: white;
 }
 
