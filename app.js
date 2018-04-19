@@ -349,6 +349,160 @@ $("#submitVerge").on("click", function () {
     });
 });
 
+$("#submitBloomberg").on("click", function() {
+  $("#topNews").empty();
+  $("#newsTitle").empty();
+  $("#mediadiv").empty();
+  var BloombergqueryURL = "https://newsapi.org/v2/top-headlines?sources=bloomberg&apiKey=95fc06a84c3242019177b79e752121ea";
+  $.ajax({
+    url: BloombergqueryURL,
+    method: "GET"
+  }).then(function(response) {
+    for (i = 0; i < response.articles.length; i++) {
+      topBloomberg = response.articles[i].title;
+      descriptionBloomberg = response.articles[i].description;
+      imageBloomberg = response.articles[i].urlToImage;
+      urlBloomberg = response.articles[i].url;
+
+      $("#mediadiv").append(
+        "<div class='media'><div class='media-left'><a href='" +
+          urlBloomberg +
+          "' target='_blank'><img class='media-object img-rounded' src='" +
+          imageBloomberg +
+          "'></a></div><div class='media-body'><h4 class='media-heading' id='newsHEADING'>" +
+          topBloomberg +
+          "</h4><p id='newsDescription'>" +
+          descriptionBloomberg +
+          "</p></div></div>"
+      );
+    }
+    $("#newsTitle").append("Bloomberg!");
+  });
+});
+
+$("#submitCNN").on("click", function() {
+  $("#topNews").empty();
+  $("#newsTitle").empty();
+  $("#mediadiv").empty();
+  var CNNqueryURL = "https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=95fc06a84c3242019177b79e752121ea";
+  $.ajax({
+    url: CNNqueryURL,
+    method: "GET"
+  }).then(function(response) {
+    for (i = 0; i < response.articles.length; i++) {
+      topCNN = response.articles[i].title;
+      descriptionCNN = response.articles[i].description;
+      imageCNN = response.articles[i].urlToImage;
+      urlCNN = response.articles[i].url;
+
+      $("#mediadiv").append(
+        "<div class='media'><div class='media-left'><a href='" +
+          urlCNN +
+          "' target='_blank'><img class='media-object img-rounded' src='" +
+          imageCNN +
+          "'></a></div><div class='media-body'><h4 class='media-heading' id='newsHEADING'>" +
+          topCNN +
+          "</h4><p id='newsDescription'>" +
+          descriptionCNN +
+          "</p></div></div>"
+      );
+    }
+    $("#newsTitle").append("CNN!");
+  });
+});
+
+$("#submitFN").on("click", function() {
+  $("#topNews").empty();
+  $("#newsTitle").empty();
+  $("#mediadiv").empty();
+  var FNqueryURL = "https://newsapi.org/v2/top-headlines?sources=fox-news&apiKey=95fc06a84c3242019177b79e752121ea";
+  $.ajax({
+    url: FNqueryURL,
+    method: "GET"
+  }).then(function(response) {
+    for (i = 0; i < response.articles.length; i++) {
+      topFN = response.articles[i].title;
+      descriptionFN = response.articles[i].description;
+      imageFN = response.articles[i].urlToImage;
+      urlFN = response.articles[i].url;
+
+      $("#mediadiv").append(
+        "<div class='media'><div class='media-left'><a href='" +
+          urlFN +
+          "' target='_blank'><img class='media-object img-rounded' src='" +
+          imageFN +
+          "'></a></div><div class='media-body'><h4 class='media-heading' id='newsHEADING'>" +
+          topFN +
+          "</h4><p id='newsDescription'>" +
+          descriptionFN +
+          "</p></div></div>"
+      );
+    }
+    $("#newsTitle").append("FOX News!");
+  });
+});
+
+$("#submitNBC").on("click", function() {
+  $("#topNews").empty();
+  $("#newsTitle").empty();
+  $("#mediadiv").empty();
+  var NBCqueryURL = "https://newsapi.org/v2/top-headlines?sources=nbc-news&apiKey=95fc06a84c3242019177b79e752121ea";
+  $.ajax({
+    url: NBCqueryURL,
+    method: "GET"
+  }).then(function(response) {
+    for (i = 0; i < response.articles.length; i++) {
+      topNBC = response.articles[i].title;
+      descriptionNBC = response.articles[i].description;
+      imageNBC = response.articles[i].urlToImage;
+      urlNBC = response.articles[i].url;
+
+      $("#mediadiv").append(
+        "<div class='media'><div class='media-left'><a href='" +
+          urlNBC +
+          "' target='_blank'><img class='media-object img-rounded' src='" +
+          imageNBC +
+          "'></a></div><div class='media-body'><h4 class='media-heading' id='newsHEADING'>" +
+          topNBC +
+          "</h4><p id='newsDescription'>" +
+          descriptionNBC +
+          "</p></div></div>"
+      );
+    }
+    $("#newsTitle").append("NBC News!");
+  });
+});
+
+$("#submitNYT").on("click", function() {
+  $("#topNews").empty();
+  $("#newsTitle").empty();
+  $("#mediadiv").empty();
+  var NYTqueryURL = "https://newsapi.org/v2/top-headlines?sources=the-new-york-times&apiKey=95fc06a84c3242019177b79e752121ea";
+  $.ajax({
+    url: NYTqueryURL,
+    method: "GET"
+  }).then(function(response) {
+    for (i = 0; i < response.articles.length; i++) {
+      topNYT = response.articles[i].title;
+      descriptionNYT = response.articles[i].description;
+      imageNYT = response.articles[i].urlToImage;
+      urlNYT = response.articles[i].url;
+
+      $("#mediadiv").append(
+        "<div class='media'><div class='media-left'><a href='" +
+          urlNYT +
+          "' target='_blank'><img class='media-object img-rounded' src='" +
+          imageNYT +
+          "'></a></div><div class='media-body'><h4 class='media-heading' id='newsHEADING'>" +
+          topNYT +
+          "</h4><p id='newsDescription'>" +
+          descriptionNYT +
+          "</p></div></div>"
+      );
+    }
+    $("#newsTitle").append("The New York Times!");
+  });
+});
 // BY: sources
 
 // responsiveness
