@@ -503,6 +503,132 @@ $("#submitNYT").on("click", function() {
     $("#newsTitle").append("The New York Times!");
   });
 });
+
+$("#submitCNBC").on("click", function() {
+  $("#topNews").empty();
+  $("#newsTitle").empty();
+  $("#mediadiv").empty();
+  var CNBCqueryURL = "https://newsapi.org/v2/top-headlines?sources=cnbc&apiKey=95fc06a84c3242019177b79e752121ea";
+  $.ajax({
+    url: CNBCqueryURL,
+    method: "GET"
+  }).then(function(response) {
+    for (i = 0; i < response.articles.length; i++) {
+      topCNBC = response.articles[i].title;
+      descriptionCNBC = response.articles[i].description;
+      imageCNBC = response.articles[i].urlToImage;
+      urlCNBC = response.articles[i].url;
+
+      $("#mediadiv").append(
+        "<div class='media'><div class='media-left'><a href='" +
+          urlCNBC +
+          "' target='_blank'><img class='media-object img-rounded' src='" +
+          imageCNBC +
+          "'></a></div><div class='media-body'><h4 class='media-heading' id='newsHEADING'>" +
+          topCNBC +
+          "</h4><p id='newsDescription'>" +
+          descriptionCNBC +
+          "</p></div></div>"
+      );
+    }
+    $("#newsTitle").append("CNBC News!");
+  });
+});
+
+$("#submitMSNBC").on("click", function() {
+  $("#topNews").empty();
+  $("#newsTitle").empty();
+  $("#mediadiv").empty();
+  var MSNBCqueryURL = "https://newsapi.org/v2/top-headlines?sources=msnbc&apiKey=95fc06a84c3242019177b79e752121ea";
+  $.ajax({
+    url: MSNBCqueryURL,
+    method: "GET"
+  }).then(function(response) {
+    for (i = 0; i < response.articles.length; i++) {
+      topMSNBC = response.articles[i].title;
+      descriptionMSNBC = response.articles[i].description;
+      imageMSNBC = response.articles[i].urlToImage;
+      urlMSNBC = response.articles[i].url;
+
+      $("#mediadiv").append(
+        "<div class='media'><div class='media-left'><a href='" +
+          urlMSNBC +
+          "' target='_blank'><img class='media-object img-rounded' src='" +
+          imageMSNBC +
+          "'></a></div><div class='media-body'><h4 class='media-heading' id='newsHEADING'>" +
+          topMSNBC +
+          "</h4><p id='newsDescription'>" +
+          descriptionMSNBC +
+          "</p></div></div>"
+      );
+    }
+    $("#newsTitle").append("MSNBC News!");
+  });
+});
+
+$("#submitReuters").on("click", function() {
+  $("#topNews").empty();
+  $("#newsTitle").empty();
+  $("#mediadiv").empty();
+  var ReutersqueryURL = "https://newsapi.org/v2/top-headlines?sources=reuters&apiKey=95fc06a84c3242019177b79e752121ea";
+  $.ajax({ url: ReutersqueryURL, method: "GET" }).then(function(response) {
+    for (i = 0; i < response.articles.length; i++) {
+      topReuters = response.articles[i].title;
+      descriptionReuters = response.articles[i].description;
+      imageReuters = response.articles[i].urlToImage;
+      urlReuters = response.articles[i].url;
+
+      $("#mediadiv").append("<div class='media'><div class='media-left'><a href='" + urlReuters + "' target='_blank'><img class='media-object img-rounded' src='" + imageReuters + "'></a></div><div class='media-body'><h4 class='media-heading' id='newsHEADING'>" + topReuters + "</h4><p id='newsDescription'>" + descriptionReuters + "</p></div></div>");
+    }
+    $("#newsTitle").append("Reuters News!");
+  });
+});
+
+$("#submitReddit").on("click", function() {
+  $("#topNews").empty();
+  $("#newsTitle").empty();
+  $("#mediadiv").empty();
+  var RedditqueryURL = "https://newsapi.org/v2/top-headlines?sources=reddit-r-all&apiKey=95fc06a84c3242019177b79e752121ea";
+  $.ajax({ url: RedditqueryURL, method: "GET" }).then(function(response) {
+    for (i = 0; i < response.articles.length; i++) {
+      topReddit = response.articles[i].title;
+      descriptionReddit = response.articles[i].description;
+      imageReddit = response.articles[i].urlToImage;
+      urlReddit = response.articles[i].url;
+
+      $("#mediadiv").append("<div class='media'><div class='media-left'><a href='" + urlReddit + "' target='_blank'><img class='media-object img-rounded' src='" + imageReddit + "'></a></div><div class='media-body'><h4 class='media-heading' id='newsHEADING'>" + topReddit + "</h4><p id='newsDescription'>" + descriptionReddit + "</p></div></div>");
+    }
+    $("#newsTitle").append("Reddit News!");
+  });
+});
+
+$("#submitHP").on("click", function() {
+  $("#topNews").empty();
+  $("#newsTitle").empty();
+  $("#mediadiv").empty();
+  var HPqueryURL = "https://newsapi.org/v2/top-headlines?sources=the-huffington-post&apiKey=95fc06a84c3242019177b79e752121ea";
+  $.ajax({ url: HPqueryURL, method: "GET" }).then(function(response) {
+    for (i = 0; i < response.articles.length; i++) {
+      topHP = response.articles[i].title;
+      descriptionHP = response.articles[i].description;
+      imageHP = response.articles[i].urlToImage;
+      urlHP = response.articles[i].url;
+
+      $("#mediadiv").append(
+        "<div class='media'><div class='media-left'><a href='" +
+          urlHP +
+          "' target='_blank'><img class='media-object img-rounded' src='" +
+          imageHP +
+          "'></a></div><div class='media-body'><h4 class='media-heading' id='newsHEADING'>" +
+          topHP +
+          "</h4><p id='newsDescription'>" +
+          descriptionHP +
+          "</p></div></div>"
+      );
+    }
+    $("#newsTitle").append("The Huffington Post!");
+  });
+});
 // BY: sources
 
 // responsiveness

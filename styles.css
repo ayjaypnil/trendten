@@ -47,6 +47,17 @@ body {
     background: rgb(43, 43, 43);
     color: white;
 }
+.navbar-default .navbar-toggle .icon-bar {
+    color: white;
+    background-color: white;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+    color: white;
+}
+
+.dropdown-menu{
+    background-color: rgb(43, 43, 43);
+}
 
 
 
