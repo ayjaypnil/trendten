@@ -18,7 +18,7 @@ body {
 .container {
     flex: 1 0 auto;
 }
-.btn-lg{
+.btn-lg,.showBtn {
     background: rgb(43, 43, 43);
     color: white;
 }
@@ -40,6 +40,11 @@ body {
     color: white;
 }
 .navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.panel-default>.panel-heading{
+    background: rgb(43, 43, 43);
     color: white;
 }
 
