@@ -578,6 +578,17 @@ $("#submitReuters").on("click", function() {
       imageReuters = response.articles[i].urlToImage;
       urlReuters = response.articles[i].url;
 
+                   if (descriptionReuters == null) {
+                     descriptionReuters = "Apologies, Data Currently Unavailable Due To Live Refresh. Please Check Back Soon!";
+                   }
+
+                   $(document).ready(function() {
+                     $("img").bind("error", function() {
+                       // Replacing image source
+                       $(this).attr("src", "news.png");
+                     });
+                   });
+
       $("#mediadiv").append("<div class='media'><div class='media-left'><a href='" + urlReuters + "' target='_blank'><img class='media-object img-rounded' src='" + imageReuters + "'></a></div><div class='media-body'><h4 class='media-heading' id='newsHEADING'>" + topReuters + "</h4><p id='newsDescription'>" + descriptionReuters + "</p></div></div>");
     }
     $("#newsTitle").append("Reuters News!");
