@@ -60,7 +60,7 @@ $("#topUSNEWS").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -92,7 +92,7 @@ $("#businessNEWS").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -124,7 +124,7 @@ $("#sportsNEWS").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -156,7 +156,7 @@ $("#technologyNEWS").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -189,7 +189,7 @@ $("#entertainmentNEWS").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -223,7 +223,7 @@ $("#searchSUBMIT").on("click", function (event) {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -286,7 +286,7 @@ $("#submitVICE").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -318,7 +318,7 @@ $("#submitBR").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -350,7 +350,7 @@ $("#submitBF").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -382,7 +382,7 @@ $("#submitVerge").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -414,7 +414,7 @@ $("#submitBloomberg").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -456,7 +456,7 @@ $("#submitCNN").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -498,7 +498,7 @@ $("#submitFN").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -540,7 +540,7 @@ $("#submitNBC").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -582,7 +582,7 @@ $("#submitNYT").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -624,7 +624,7 @@ $("#submitCNBC").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -708,7 +708,7 @@ $("#submitReuters").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -740,7 +740,7 @@ $("#submitReddit").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
@@ -772,7 +772,7 @@ $("#submitHP").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
