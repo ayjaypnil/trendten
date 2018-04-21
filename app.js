@@ -254,7 +254,7 @@ $("#submitWIRED").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
             // dynamically create the whole damn media thing
@@ -666,7 +666,7 @@ $("#submitMSNBC").on("click", function () {
             $(document).ready(function () {
                 $("img").bind("error", function () {
                     // Replacing image source
-                    $(this).attr("src", "news.png");
+                    $(this).attr("src", "Trend10.png");
                 });
             });
 
