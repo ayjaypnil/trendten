@@ -73,7 +73,7 @@ $("#topUSNEWS").on("click", function () {
 $("#businessNEWS").on("click", function () {
     $("#mediadiv").empty();
     $("#newsTitle").empty();
-    var topBUSINESSqueryURL = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=95fc06a84c3242019177b79e752121ea";
+    var topBUSINESSqueryURL = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: topBUSINESSqueryURL,
         method: 'GET'
@@ -105,7 +105,7 @@ $("#businessNEWS").on("click", function () {
 $("#sportsNEWS").on("click", function () {
     $("#mediadiv").empty();
     $("#newsTitle").empty();
-    var topSPORTSqueryURL = "https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=95fc06a84c3242019177b79e752121ea";
+    var topSPORTSqueryURL = "https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: topSPORTSqueryURL,
         method: 'GET'
@@ -137,7 +137,7 @@ $("#sportsNEWS").on("click", function () {
 $("#technologyNEWS").on("click", function () {
     $("#mediadiv").empty();
     $("#newsTitle").empty();
-    var topTECHqueryURL = "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=95fc06a84c3242019177b79e752121ea";
+    var topTECHqueryURL = "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: topTECHqueryURL,
         method: 'GET'
@@ -170,7 +170,7 @@ $("#technologyNEWS").on("click", function () {
 $("#entertainmentNEWS").on("click", function () {
     $("#mediadiv").empty();
     $("#newsTitle").empty();
-    var topENTqueryURL = "https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=95fc06a84c3242019177b79e752121ea";
+    var topENTqueryURL = "https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: topENTqueryURL,
         method: 'GET'
@@ -207,7 +207,7 @@ $("#searchSUBMIT").on("click", function (event) {
     $("#newsTitle").empty();
 
     var newsSEARCH = $("#newsSEARCH").val();
-    var SEARCHqueryurl = "https://newsapi.org/v2/top-headlines?q=" + newsSEARCH + "&sortBy=popularity&apiKey=95fc06a84c3242019177b79e752121ea"
+    var SEARCHqueryurl = "https://newsapi.org/v2/top-headlines?q=" + newsSEARCH + "&sortBy=popularity&apiKey=ab3d4ba9b4f948d08bfc266af571208a"
 
     $.ajax({
         url: SEARCHqueryurl,
@@ -240,7 +240,7 @@ $("#submitWIRED").on("click", function () {
     $("#topNews").empty();
     $("#newsTitle").empty();
     $("#mediadiv").empty();
-    var WIREDqueryURL = "https://newsapi.org/v2/top-headlines?sources=wired&apiKey=95fc06a84c3242019177b79e752121ea";
+    var WIREDqueryURL = "https://newsapi.org/v2/top-headlines?sources=wired&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: WIREDqueryURL,
         method: 'GET'
@@ -268,7 +268,7 @@ $("#submitVICE").on("click", function () {
     $("#topNews").empty();
     $("#newsTitle").empty();
     $("#mediadiv").empty();
-    var VICEqueryURL = "https://newsapi.org/v2/top-headlines?sources=vice-news&apiKey=95fc06a84c3242019177b79e752121ea";
+    var VICEqueryURL = "https://newsapi.org/v2/top-headlines?sources=vice-news&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: VICEqueryURL,
         method: 'GET'
@@ -300,7 +300,7 @@ $("#submitBR").on("click", function () {
     $("#topNews").empty();
     $("#newsTitle").empty();
     $("#mediadiv").empty();
-    var BRqueryURL = "https://newsapi.org/v2/top-headlines?sources=bleacher-report&apiKey=95fc06a84c3242019177b79e752121ea";
+    var BRqueryURL = "https://newsapi.org/v2/top-headlines?sources=bleacher-report&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: BRqueryURL,
         method: 'GET'
@@ -332,7 +332,7 @@ $("#submitBF").on("click", function () {
     $("#topNews").empty();
     $("#newsTitle").empty();
     $("#mediadiv").empty();
-    var BFqueryURL = "https://newsapi.org/v2/top-headlines?sources=buzzfeed&apiKey=95fc06a84c3242019177b79e752121ea";
+    var BFqueryURL = "https://newsapi.org/v2/top-headlines?sources=buzzfeed&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: BFqueryURL,
         method: 'GET'
@@ -364,7 +364,7 @@ $("#submitVerge").on("click", function () {
     $("#topNews").empty();
     $("#newsTitle").empty();
     $("#mediadiv").empty();
-    var VERGEqueryURL = "https://newsapi.org/v2/top-headlines?sources=the-verge&apiKey=95fc06a84c3242019177b79e752121ea";
+    var VERGEqueryURL = "https://newsapi.org/v2/top-headlines?sources=the-verge&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: VERGEqueryURL,
         method: 'GET'
@@ -396,7 +396,7 @@ $("#submitBloomberg").on("click", function () {
     $("#topNews").empty();
     $("#newsTitle").empty();
     $("#mediadiv").empty();
-    var BloombergqueryURL = "https://newsapi.org/v2/top-headlines?sources=bloomberg&apiKey=95fc06a84c3242019177b79e752121ea";
+    var BloombergqueryURL = "https://newsapi.org/v2/top-headlines?sources=bloomberg&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: BloombergqueryURL,
         method: "GET"
@@ -438,7 +438,7 @@ $("#submitCNN").on("click", function () {
     $("#topNews").empty();
     $("#newsTitle").empty();
     $("#mediadiv").empty();
-    var CNNqueryURL = "https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=95fc06a84c3242019177b79e752121ea";
+    var CNNqueryURL = "https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: CNNqueryURL,
         method: "GET"
@@ -480,7 +480,7 @@ $("#submitFN").on("click", function () {
     $("#topNews").empty();
     $("#newsTitle").empty();
     $("#mediadiv").empty();
-    var FNqueryURL = "https://newsapi.org/v2/top-headlines?sources=fox-news&apiKey=95fc06a84c3242019177b79e752121ea";
+    var FNqueryURL = "https://newsapi.org/v2/top-headlines?sources=fox-news&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: FNqueryURL,
         method: "GET"
@@ -522,7 +522,7 @@ $("#submitNBC").on("click", function () {
     $("#topNews").empty();
     $("#newsTitle").empty();
     $("#mediadiv").empty();
-    var NBCqueryURL = "https://newsapi.org/v2/top-headlines?sources=nbc-news&apiKey=95fc06a84c3242019177b79e752121ea";
+    var NBCqueryURL = "https://newsapi.org/v2/top-headlines?sources=nbc-news&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: NBCqueryURL,
         method: "GET"
@@ -564,7 +564,7 @@ $("#submitNYT").on("click", function () {
     $("#topNews").empty();
     $("#newsTitle").empty();
     $("#mediadiv").empty();
-    var NYTqueryURL = "https://newsapi.org/v2/top-headlines?sources=the-new-york-times&apiKey=95fc06a84c3242019177b79e752121ea";
+    var NYTqueryURL = "https://newsapi.org/v2/top-headlines?sources=the-new-york-times&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: NYTqueryURL,
         method: "GET"
@@ -606,7 +606,7 @@ $("#submitCNBC").on("click", function () {
     $("#topNews").empty();
     $("#newsTitle").empty();
     $("#mediadiv").empty();
-    var CNBCqueryURL = "https://newsapi.org/v2/top-headlines?sources=cnbc&apiKey=95fc06a84c3242019177b79e752121ea";
+    var CNBCqueryURL = "https://newsapi.org/v2/top-headlines?sources=cnbc&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: CNBCqueryURL,
         method: "GET"
@@ -648,7 +648,7 @@ $("#submitMSNBC").on("click", function () {
     $("#topNews").empty();
     $("#newsTitle").empty();
     $("#mediadiv").empty();
-    var MSNBCqueryURL = "https://newsapi.org/v2/top-headlines?sources=msnbc&apiKey=95fc06a84c3242019177b79e752121ea";
+    var MSNBCqueryURL = "https://newsapi.org/v2/top-headlines?sources=msnbc&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: MSNBCqueryURL,
         method: "GET"
@@ -690,7 +690,7 @@ $("#submitReuters").on("click", function () {
     $("#topNews").empty();
     $("#newsTitle").empty();
     $("#mediadiv").empty();
-    var ReutersqueryURL = "https://newsapi.org/v2/top-headlines?sources=reuters&apiKey=95fc06a84c3242019177b79e752121ea";
+    var ReutersqueryURL = "https://newsapi.org/v2/top-headlines?sources=reuters&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: ReutersqueryURL,
         method: "GET"
@@ -722,7 +722,7 @@ $("#submitReddit").on("click", function () {
     $("#topNews").empty();
     $("#newsTitle").empty();
     $("#mediadiv").empty();
-    var RedditqueryURL = "https://newsapi.org/v2/top-headlines?sources=reddit-r-all&apiKey=95fc06a84c3242019177b79e752121ea";
+    var RedditqueryURL = "https://newsapi.org/v2/top-headlines?sources=reddit-r-all&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: RedditqueryURL,
         method: "GET"
@@ -754,7 +754,7 @@ $("#submitHP").on("click", function () {
     $("#topNews").empty();
     $("#newsTitle").empty();
     $("#mediadiv").empty();
-    var HPqueryURL = "https://newsapi.org/v2/top-headlines?sources=the-huffington-post&apiKey=95fc06a84c3242019177b79e752121ea";
+    var HPqueryURL = "https://newsapi.org/v2/top-headlines?sources=the-huffington-post&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: HPqueryURL,
         method: "GET"
