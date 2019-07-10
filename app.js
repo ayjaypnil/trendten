@@ -41,7 +41,7 @@ $("#topUSNEWS").on("click", function () {
 
 
 
-    var topUSqueryURL = "https://newsapi.org/v2/top-headlines?country=us&apiKey=95fc06a84c3242019177b79e752121ea";
+    var topUSqueryURL = "https://newsapi.org/v2/top-headlines?country=us&apiKey=ab3d4ba9b4f948d08bfc266af571208a";
     $.ajax({
         url: topUSqueryURL,
         method: 'GET'
